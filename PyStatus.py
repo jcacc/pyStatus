@@ -52,16 +52,17 @@ def send_request_pulse(color):
 root = tk.Tk()
 root.title("PyStatus")
 root.wm_attributes('-topmost', 1)
+root.resizable(False,False)
 
 # Create buttons
-button_red = tk.Button(root, bg='red', width=15, height=2, command=lambda: send_request('red'))
-button_green = tk.Button(root, bg='green', width=15, height=2, command=lambda: send_request('green'))
-button_purple = tk.Button(root, bg='purple', width=15, height=2, command=lambda: send_request('purple'))
-button_yellow = tk.Button(root, bg='yellow', width=15, height=2, command=lambda: send_request('yellow'))
-button_RedPulse = tk.Button(root, text='Pulse', width=15, height=2, command=lambda: send_request_pulse('red'))
-button_GreenPulse = tk.Button(root, text='Pulse', width=15, height=2, command=lambda: send_request_pulse('green'))
-button_YellowPulse = tk.Button(root, text='Pulse', width=15, height=2, command=lambda: send_request_pulse('yellow'))
-button_PurplePulse = tk.Button(root, text='Pulse', width=15, height=2, command=lambda: send_request_pulse('purple'))
+button_red = tk.Button(root, bg='red', width=7, height=1, command=lambda: send_request('red'))
+button_green = tk.Button(root, bg='green', width=7, height=1, command=lambda: send_request('green'))
+button_purple = tk.Button(root, bg='purple', width=7, height=1, command=lambda: send_request('purple'))
+button_yellow = tk.Button(root, bg='yellow', width=7, height=1, command=lambda: send_request('yellow'))
+button_RedPulse = tk.Button(root, text='Pulse', width=7, height=1, command=lambda: send_request_pulse('red'))
+button_GreenPulse = tk.Button(root, text='Pulse', width=7, height=1, command=lambda: send_request_pulse('green'))
+button_YellowPulse = tk.Button(root, text='Pulse', width=7, height=1, command=lambda: send_request_pulse('yellow'))
+button_PurplePulse = tk.Button(root, text='Pulse', width=7, height=1, command=lambda: send_request_pulse('purple'))
 
 
 
@@ -87,3 +88,4 @@ button_YellowPulse.grid(row=1, column=3)
 
 # Start Tkinter event loop
 root.mainloop()
+
