@@ -44,7 +44,7 @@ def send_request_pulse(color):
 
 # Initialize Tkinter window
 root = tk.Tk()
-root.title("Color Button App")
+root.title("PyStatus")
 root.wm_attributes('-topmost', 1)
 
 # Create buttons
